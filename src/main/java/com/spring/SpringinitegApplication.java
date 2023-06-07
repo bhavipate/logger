@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.slf4j.*;
 @SpringBootApplication 
 public class SpringinitegApplication implements CommandLineRunner{
-	public final Logger Logger= LoggerFactory.getLogger(SpringinitegApplication.class);
-	public  void main(String[] args)
+	public  static final Logger Logger= LoggerFactory.getLogger(SpringinitegApplication.class);
+	public static void main(String[] args)
 	{ 
 		Logger.info("its a CI pipeline job"); 
 		SpringApplication.run(SpringinitegApplication.class, args); 
